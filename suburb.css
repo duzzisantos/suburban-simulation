@@ -1,0 +1,264 @@
+.row {
+    height: 3000px;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: yellow;
+    margin-left: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#moon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(207, 207, 101);
+    box-shadow: 0 0 40px 0 white;
+    margin-left: auto;
+    margin-right: 150px;
+}
+
+/* #stars {
+    height: 1px;
+    width: 1px;
+    background-color: whitesmoke;
+    display: inline-flex;
+    margin-left: 50px;
+    -webkit-animation: bgcolorchange 4s infinite;
+    animation: bgcolorchange 4s infinite;
+} */
+
+#house {
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(41, 40, 40);
+    ;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 80px;
+}
+
+#roof {
+    height: calc(1/10 * 100px);
+    width: calc(100px + (1/5 * 100px));
+    border: 1px solid rgb(41, 40, 40);
+    background-color: rgb(41, 40, 40);
+    ;
+    display: flex;
+    border-top-width: 12px;
+}
+
+#window:nth-of-type(odd) {
+    height: calc(1/2 * 100px);
+    display: inline-block;
+    width: calc(1/2 * 100px);
+    overflow: hidden;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    /* -webkit-animation: bgcolorchange 10s infinite;
+    animation: bgcolorchange 10s infinite; */
+}
+
+#window:nth-of-type(even) {
+    height: calc(2/3 * 100px);
+    width: calc(1/4 * 100px);
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid gray;
+    border-bottom: 2px solid rgb(43, 42, 42);
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+#knob {
+    height: 4px;
+    width: 3px;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: 1.2px;
+    margin-top: 9px;
+}
+
+#glass {
+    height: 7px;
+    width: 7px;
+    display: inline-block;
+    border: 1px solid white;
+    margin-left: 1px;
+    margin-top: 5px;
+    /* -webkit-animation: bgcolorchange 10s infinite;
+    animation: bgcolorchange 10s infinite; */
+}
+
+#driveWay {
+    border-bottom: 60px solid rgb(41, 40, 40);
+    ;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 60px;
+    display: inline-block;
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+#culvet {
+    width: 1330px;
+    height: 60px;
+    background-color: rgb(2, 41, 2);
+    border-bottom: 4px solid rgb(41, 40, 40);
+    border-top: 2px solid rgb(41, 40, 40);
+}
+
+#flowers {
+    height: 5px;
+    width: 5px;
+    background-color: rgb(152, 243, 14);
+    border-radius: 50%;
+    margin: 17.68px;
+    display: inline-block;
+}
+
+#flowers2 {
+    height: 5px;
+    width: 5px;
+    background-color: rgb(109, 29, 4);
+    border-radius: 50%;
+    margin: 17.68px;
+    margin-top: -22px;
+    display: inline-block;
+}
+
+#road {
+    width: 1330px;
+    height: 10px;
+    display: block;
+    background-color: goldenrod;
+    margin-top: 100px;
+}
+
+#gcartop{
+    height: 20px;
+    width: 40px;
+    background-color: green;
+    margin-left: 29px;
+    display: block;
+    margin-top: 10px;
+    border-top-left-radius: 20px;
+}
+#cartop {
+    height: 20px;
+    width: 40px;
+    background-color: maroon;
+    margin-left: 29px;
+    display: block;
+    margin-top: 10px;
+    border-top-right-radius: 20px;
+}
+
+#gcarmiddle{
+    height: 20px;
+    width: 70px;
+    background-color: green;
+    margin-left: 20px;
+    display: block;
+    border-radius: 50px;
+}
+
+#carmiddle {
+    height: 20px;
+    width: 70px;
+    background-color: maroon;
+    margin-left: 20px;
+    display: block;
+    border-radius: 50px;
+}
+
+#gcarwheel{
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 28px;
+    margin-top: -20px;
+}
+#carwheel {
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    margin-left: 28px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+
+#greencar{
+    transition: margin-left 15s;
+    margin-bottom: -70px;
+}
+#car {
+    transition: margin-left 10s;
+    margin-top: 30px;
+}
+
+.row:hover #greencar {
+    transition-timing-function: ease-in-out;
+    margin-left: 1000px;
+}
+.row:hover #car {
+    transition-timing-function: ease-in-out;
+    margin-left: 1000px;
+}
+
+#house:hover #glass {
+    background-color: yellow;
+}
+
+#house:hover #window:nth-of-type(odd) {
+    background-color: yellow;
+    box-shadow: 0 0 8px 0 yellow;
+}
+
+@-webkit-keyframes bgcolorchange {
+    0% {
+        background: yellow;
+        border: yellow;
+    }
+    25% {
+        background: gold;
+        border: gold;
+    }
+    75% {
+        background: orange;
+        border: orange;
+    }
+    100% {
+        background-color: white;
+        border: white;
+    }
+}
+
+@keyframes bgcolorchange {
+    0% {
+        background-color: yellow;
+        border: yellow;
+    }
+    25% {
+        background-color: gold;
+        border: gold;
+    }
+    75% {
+        background-color: orange;
+        border: orange;
+    }
+    100% {
+        background-color: white;
+        border: white;
+    }
+}
